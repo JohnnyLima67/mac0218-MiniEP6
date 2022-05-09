@@ -1,0 +1,7 @@
+comandos usados:
+
+docker pull caddy:2.5.1
+
+docker image build mac0218-MiniEP6 -t alpine:2.5.1
+
+docker container run --name e63f36e9049f -p 1024:80 -v ${PWD}:/usr/src/pages -d alpine:2.5.1
